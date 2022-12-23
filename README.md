@@ -15,17 +15,23 @@ Small wrapper around faker, to make values optional!
 >>> from faker import Faker
 >>> 
 >>> fake = Faker()
->>> Faker.seed(0)
+>>> Faker.seed(444)
 >>> 
 >>> # `fake.optional` can take any value, and return it, or None.
 >>> fake.optional(fake.pystr())
-'RNvnAvOpyEVAoNGnVZQU'
+'qazSMGwqdElzLTggMaPM'
+>>> fake.optional(fake.pystr())
+None
 >>> # or it can take callable, and *args with **kwargs
 >>> # that will be passed to this callable.
+>>> fake.optional(fake.pystr, 1, max_chars=10)
+'hmIEP'
 >>> fake.optional(fake.pystr, 1, max_chars=10)
 None
 >>> # there is no explicit check is callable a faker part,
 >>> # so you can pass anything.
+>>> fake.optional(lambda: "my callable!")
+'my callable!'
 >>> fake.optional(lambda: "my callable!")
 None
 ```
