@@ -10,8 +10,8 @@ updates:
       update-types: [ "version-update:semver-patch" ]
     # Update these dependencies with CI (poetry update)
     - dependency-name: "colorama"
-    # Update these dependencies with fire-square-style
-    - dependency-name: "python-decouple"
+    # Update these dependencies with python-template
+    - dependency-name: "omegaconf"
     - dependency-name: "structlog"
     ### Docs section ###
     - dependency-name: "sphinx"

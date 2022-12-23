@@ -39,7 +39,7 @@ jobs:
         poetry install --without docs --with github_hooks
 
     - name: Run checks
-      run: make test ci=1
+      run: poetry run make test ci=1
 
     # Upload coverage to codecov: https://codecov.io/
     - name: Upload coverage to Codecov
@@ -74,7 +74,7 @@ jobs:
 
     - name: Apply codestyle
       run: |
-        make style
+        poetry run make style
 
         poetry run python .github/commit_and_push.py \
           --token ${{ secrets.GITHUB_TOKEN }} \

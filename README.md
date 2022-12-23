@@ -86,6 +86,6 @@ if you used `git` for downloading, just run `git pull`.
 
 This project was inspired by [faker-optional](https://github.com/lyz-code/faker-optional).
 
-This project was generated with [fire-square-style](https://github.com/fire-square/fire-square-style).
-Current template version: [81f29408150f00e921b0de2b50edc9aeaa8048c7](https://github.com/fire-square/fire-square-style/tree/81f29408150f00e921b0de2b50edc9aeaa8048c7).
-See what [updated](https://github.com/fire-square/fire-square-style/compare/81f29408150f00e921b0de2b50edc9aeaa8048c7...master).
+This project was generated with [python-template](https://github.com/PerchunPak/python-template).
+Current template version: [4a2261d1a645d05e269c2f4b02c0b68203ad72fa](https://github.com/PerchunPak/python-template/tree/4a2261d1a645d05e269c2f4b02c0b68203ad72fa).
+See what [updated](https://github.com/PerchunPak/python-template/compare/4a2261d1a645d05e269c2f4b02c0b68203ad72fa...master).

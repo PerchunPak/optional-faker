@@ -1,5 +1,5 @@
 [build-system]
-requires = ["poetry-core>=1.2.0"]
+requires = ["poetry-core>=1.3.0"]
 build-backend = "poetry.core.masonry.api"
 
 
@@ -34,7 +34,7 @@ classifiers = [
 
 
 [tool.poetry.dependencies]
-python = "^3.8,<=3.11"
+python = ">=3.8.1,<3.12"
 
 # Our dependecies
 Faker = "*"
@@ -44,9 +44,10 @@ Faker = "*"
 black = "~22"
 isort = "~5.10"
 pycln = "~2.1"
-mypy = "*"  # dependabot can't update non semver dependencies with our config, see e9376da in fire-square-style
-flake8 = "~5"
+mypy = "*"  # dependabot can't update non semver dependencies with our config, see e9376da in python-template
+flake8 = "~6"
 flake8-docstrings = "~1"
+flake8-ensure-ascii = "~1.0"
 pydocstyle = ">=4.0.0"
 safety = "~2.3"
 
@@ -69,7 +70,7 @@ sphinx-intl = "~2.0"  # only for locales
 furo = "*"
 m2r2 = "~0.3"
 tomli = { version = "~2.0", markers = "python_version < '3.11'" }
-packaging = "21.3"
+packaging = "22.0"
 
 
 [tool.poetry.group.github_hooks]
