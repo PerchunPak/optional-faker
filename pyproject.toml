@@ -37,7 +37,7 @@ classifiers = [
 python = "^3.8,<=3.11"
 
 # Our dependecies
-Faker = "~15"
+Faker = "*"
 
 
 [tool.poetry.group.make.dependencies]
