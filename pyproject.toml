@@ -50,6 +50,8 @@ flake8-docstrings = "~1"
 flake8-ensure-ascii = "~1.0"
 pydocstyle = ">=4.0.0"
 safety = "~2.3"
+cruft = "~2.11"
+lice = "~0.6"  # for generating template
 
 pre-commit = "~2.20"
 

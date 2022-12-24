@@ -93,5 +93,3 @@ if you used `git` for downloading, just run `git pull`.
 This project was inspired by [faker-optional](https://github.com/lyz-code/faker-optional).
 
 This project was generated with [python-template](https://github.com/PerchunPak/python-template).
-Current template version: [4a2261d1a645d05e269c2f4b02c0b68203ad72fa](https://github.com/PerchunPak/python-template/tree/4a2261d1a645d05e269c2f4b02c0b68203ad72fa).
-See what [updated](https://github.com/PerchunPak/python-template/compare/4a2261d1a645d05e269c2f4b02c0b68203ad72fa...master).

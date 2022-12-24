@@ -76,6 +76,8 @@ jobs:
       run: |
         poetry run make style
 
+    - name: Commit changes
+      run: |
         poetry run python .github/commit_and_push.py \
           --token ${{ secrets.GITHUB_TOKEN }} \
           PerchunPak/optional-faker \

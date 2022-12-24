@@ -1,0 +1,24 @@
+{
+  "template": "https://github.com/PerchunPak/python-template",
+  "commit": "cba003f56de27f4e36ed2f299342332db0c5d8cb",
+  "context": {
+    "cookiecutter": {
+      "project_name": "optional-faker",
+      "organization": "PerchunPak",
+      "project_description": "Small wrapper around faker, to make values optional!",
+      "other_languages_support": "n",
+      "ukrainian_language_support": "n",
+      "russian_language_support": "n",
+      "license": "GPL3",
+      "_copy_without_render": [
+        ".venv",
+        "docs/_build",
+        "docs/_autoapi_templates/python",
+        ".github/workflows"
+      ],
+      "_template": "https://github.com/PerchunPak/python-template"
+    }
+  },
+  "directory": null,
+  "checkout": null
+}
