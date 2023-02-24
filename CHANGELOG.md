@@ -3,6 +3,11 @@
 We follow [Semantic Versions](https://semver.org/) style.
 
 
+## Version 1.0.0-post.2
+
+- Include 'optional-faker' import line in README example. ([#3](https://github.com/PerchunPak/optional-faker/pull/3))
+
+
 ## Version 1.0.0-post.1
 
 - Added better seed in README example. ([93651d99](https://github.com/PerchunPak/optional-faker/commit/93651d99a6d9515f1022e99882f7dabb79a8e7b3))
