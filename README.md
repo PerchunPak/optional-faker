@@ -13,7 +13,8 @@ Small wrapper around faker, to make values optional!
 
 ```py
 >>> from faker import Faker
->>> 
+>>> import optional_faker
+>>>
 >>> fake = Faker()
 >>> Faker.seed(444)
 >>> 
