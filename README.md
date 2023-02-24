@@ -17,7 +17,7 @@ Small wrapper around faker, to make values optional!
 >>>
 >>> fake = Faker()
 >>> Faker.seed(444)
->>> 
+>>>
 >>> # `fake.optional` can take any value, and return it, or None.
 >>> fake.optional(fake.pystr())
 'qazSMGwqdElzLTggMaPM'
