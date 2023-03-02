@@ -1627,13 +1627,14 @@ docs = ["furo", "ipython", "myst-parser", "sphinx-copybutton", "sphinx-inline-ta
 
 [[package]]
 name = "sphinx-intl"
-version = "2.0.1"
+version = "2.1.0"
 description = "Sphinx utility that make it easy to translate and to apply translation."
 category = "dev"
 optional = false
-python-versions = ">=3.5"
+python-versions = ">=3.7"
 files = [
-    {file = "sphinx-intl-2.0.1.tar.gz", hash = "sha256:b25a6ec169347909e8d983eefe2d8adecb3edc2f27760db79b965c69950638b4"},
+    {file = "sphinx-intl-2.1.0.tar.gz", hash = "sha256:9d9849ae42515b39786824e99f1e30db0404c377b01bb022690fc932b0221c02"},
+    {file = "sphinx_intl-2.1.0-py3-none-any.whl", hash = "sha256:9798946b995989de691387651d70c3fc191275b587e2e519655541edfd7bbd68"},
 ]
 
 [package.dependencies]
@@ -1643,8 +1644,7 @@ setuptools = "*"
 sphinx = "*"
 
 [package.extras]
-test = ["mock", "pytest"]
-transifex = ["transifex_client (>=0.11)"]
+test = ["mock", "pytest", "six"]
 
 [[package]]
 name = "sphinxcontrib-applehelp"
@@ -1981,4 +1981,4 @@ testing = ["flake8 (<5)", "func-timeout", "jaraco.functools", "jaraco.itertools"
 [metadata]
 lock-version = "2.0"
 python-versions = ">=3.8.1,<3.12"
-content-hash = "b2b16ccc95b3ac9a4c1d924e8982b32bb3aa951b440bf9df33f392077e4569d5"
+content-hash = "cdab0a53dd15ff8a66d80fe4d48631352bbb51fbb0567acb04ab6e0263d3f8da"
