@@ -5,7 +5,7 @@ build-backend = "poetry.core.masonry.api"
 
 [tool.poetry]
 name = "optional-faker"
-version = "1.0.0-post.2"
+version = "2.0.0"
 description = "Small wrapper around faker, to make values optional!"
 license = "GPL3"
 authors = ["PerchunPak <pypi@perchun.it>"]
