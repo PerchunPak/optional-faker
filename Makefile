@@ -1,13 +1,18 @@
 SHELL:=/usr/bin/env bash
 
-.PHONY: style
+.PHONY: format
 style:
 	black .
 	isort .
 	pycln .
-	mypy --install-types --non-interactive .
+
+.PHONY: lint
+lint:
+	mypy .
 	flake8 .
-	cruft check
+
+.PHONY: style
+style: format lint
 
 .PHONY: unit
 unit:
