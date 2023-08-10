@@ -25,14 +25,14 @@ class Provider(BaseProvider):
         self.__python = PythonProvider(generator)
 
     @t.overload
-    def optional(self, value: _ANY, /) -> t.Optional[_ANY]:
+    def none_or(self, value: _ANY, /) -> t.Optional[_ANY]:
         """Overload with value."""
 
     @t.overload
-    def optional(self, callable: t.Callable[_P, _ANY], /, *args: _P.args, **kwargs: _P.kwargs) -> t.Optional[_ANY]:
+    def none_or(self, callable: t.Callable[_P, _ANY], /, *args: _P.args, **kwargs: _P.kwargs) -> t.Optional[_ANY]:
         """Overload with callable."""
 
-    def optional(
+    def none_or(
         self, value_or_callable: t.Callable[_P, _ANY], /, *args: _P.args, **kwargs: _P.kwargs
     ) -> t.Optional[_ANY]:
         """Takes value or callable, and returns the value or the result of the callable, or None.
@@ -52,6 +52,8 @@ class Provider(BaseProvider):
             return value_or_callable(*args, **kwargs)
         else:
             return value_or_callable  # type: ignore[return-value] # false-positive
+
+    optional = none_or  # backwards compatibility
 
 
 faker.config.PROVIDERS.append("optional_faker")

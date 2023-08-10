@@ -9,6 +9,8 @@
 
 Small wrapper around faker, to make values optional!
 
+Note that faker added own `optional` proxy, which however can be used only with callables. This is why in version 2.0.0 we renamed our method to `none_or`.
+
 ## Example
 
 ```py
@@ -18,22 +20,22 @@ Small wrapper around faker, to make values optional!
 >>> fake = Faker()
 >>> Faker.seed(444)
 >>>
->>> # `fake.optional` can take any value, and return it, or None.
->>> fake.optional(fake.pystr())
+>>> # `fake.none_or` can take any value, and return it, or None.
+>>> fake.none_or(fake.pystr())
 'qazSMGwqdElzLTggMaPM'
->>> fake.optional(fake.pystr())
+>>> fake.none_or(fake.pystr())
 None
 >>> # or it can take callable, and *args with **kwargs
 >>> # that will be passed to this callable.
->>> fake.optional(fake.pystr, 1, max_chars=10)
+>>> fake.none_or(fake.pystr, 1, max_chars=10)
 'hmIEP'
->>> fake.optional(fake.pystr, 1, max_chars=10)
+>>> fake.none_or(fake.pystr, 1, max_chars=10)
 None
 >>> # there is no explicit check is callable a faker part,
 >>> # so you can pass anything.
->>> fake.optional(lambda: "my callable!")
+>>> fake.none_or(lambda: "my callable!")
 'my callable!'
->>> fake.optional(lambda: "my callable!")
+>>> fake.none_or(lambda: "my callable!")
 None
 ```
 

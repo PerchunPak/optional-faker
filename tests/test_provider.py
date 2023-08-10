@@ -11,7 +11,7 @@ class TestOptionalFaker:
         mocker.patch("faker.providers.python.Provider.pybool", lambda *_, **__: True)
 
         unique = object()
-        assert faker.optional(unique) is unique
+        assert faker.none_or(unique) is unique
 
     def test_calls_callable(self, faker: Faker, mocker: MockerFixture) -> None:
         """Tests, that provider calls callable with correct arguments."""
@@ -19,7 +19,7 @@ class TestOptionalFaker:
 
         stub = mocker.stub()
         args, kwargs = faker.pytuple(), faker.pydict()
-        faker.optional(stub, *args, **kwargs)
+        faker.none_or(stub, *args, **kwargs)
 
         stub.assert_called_once_with(*args, **kwargs)
 
@@ -28,7 +28,7 @@ class TestOptionalFaker:
         mocker.patch("faker.providers.python.Provider.pybool", lambda *_, **__: False)
 
         stub = mocker.stub()
-        faker.optional(stub)
+        faker.none_or(stub)
 
         stub.assert_not_called()
 
@@ -36,10 +36,10 @@ class TestOptionalFaker:
         """Tests, that provider returns None if `faker.pybool` was False."""
         mocker.patch("faker.providers.python.Provider.pybool", lambda *_, **__: False)
 
-        assert faker.optional(object()) is None
+        assert faker.none_or(object()) is None
 
     def test_returns_none_with_callable(self, faker: Faker, mocker: MockerFixture) -> None:
         """Tests, that provider returns None if `faker.pybool` was False, instead of calling callable."""
         mocker.patch("faker.providers.python.Provider.pybool", lambda *_, **__: False)
 
-        assert faker.optional(object) is None
+        assert faker.none_or(object) is None
