@@ -1,7 +1,9 @@
 """It is a script, which looks for a seed we can use in our README example."""
-import optional_faker
-from faker import Faker
 import itertools
+
+from faker import Faker
+
+import optional_faker
 
 
 def main() -> None:

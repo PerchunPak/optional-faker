@@ -51,5 +51,5 @@ class TestOptionalFaker:
         assert fake.none_or(fake.pystr()) is None
         assert fake.none_or(fake.pystr, 1, max_chars=10) is not None
         assert fake.none_or(fake.pystr, 1, max_chars=10) is None
-        assert fake.none_or(lambda: "my callable!") == 'my callable!'
+        assert fake.none_or(lambda: "my callable!") == "my callable!"
         assert fake.none_or(lambda: "my callable!") is None
