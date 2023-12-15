@@ -3,6 +3,11 @@
 We follow [Semantic Versions](https://semver.org/) style.
 
 
+## Version 2.1.0
+
+- Support Python 3.12 ([e650c775](https://github.com/PerchunPak/optional-faker/commit/e650c775d1258334f0cc545a1aa51549d3e63d70)).
+
+
 ## Version 2.0.0
 
 - Rename our method to `none_or`, which means that you must use `faker.none_or` instead of `faker.optional`. This is because faker added a new proxy, `faker.optional`, which works similary to `faker.unique`, but makes callables optional. This is different approach and doesn't allow to pass values or custom callables, unlike ours. This is why this library isn't deprecated. ([613e719b](https://github.com/PerchunPak/optional-faker/commit/613e719ba87bc22035415e8fffd2f018920fe82e))
