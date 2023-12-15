@@ -25,7 +25,7 @@ jobs:
       uses: ItsDrike/setup-poetry@v1
       with:
           python-version: ${{ matrix.python-version }}
-          install-args: --without docs --with github_hooks --sync
+          install-args: --with github_hooks --sync
 
     - name: Run checks
       run: poetry run make test
