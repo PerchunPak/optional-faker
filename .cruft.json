@@ -1,6 +1,6 @@
 {
   "template": "https://github.com/PerchunPak/python-template",
-  "commit": "99c3a1c85df8b35fdc2c610a625deb99ba7b10b6",
+  "commit": "306ee570af73d4bc3636425ef8cfacf3d18da074",
   "context": {
     "cookiecutter": {
       "project_name": "optional-faker",
@@ -11,8 +11,6 @@
       "russian_language_support": "n",
       "license": "GPL3",
       "_copy_without_render": [
-        ".venv",
-        "docs/_build",
         "docs/_autoapi_templates/python"
       ],
       "_template": "https://github.com/PerchunPak/python-template"
