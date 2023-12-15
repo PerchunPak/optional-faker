@@ -43,3 +43,13 @@ class TestOptionalFaker:
         mocker.patch("faker.providers.python.Provider.pybool", lambda *_, **__: False)
 
         assert faker.none_or(object) is None
+
+    def test_seed_in_readme_is_right(self) -> None:
+        fake = Faker()
+        Faker.seed(1555)
+        assert fake.none_or(fake.pystr()) is not None
+        assert fake.none_or(fake.pystr()) is None
+        assert fake.none_or(fake.pystr, 1, max_chars=10) is not None
+        assert fake.none_or(fake.pystr, 1, max_chars=10) is None
+        assert fake.none_or(lambda: "my callable!") == 'my callable!'
+        assert fake.none_or(lambda: "my callable!") is None

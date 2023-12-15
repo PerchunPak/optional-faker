@@ -17,17 +17,17 @@ Note that faker added own `optional` proxy, which however can be used only with 
 >>> import optional_faker
 >>>
 >>> fake = Faker()
->>> Faker.seed(444)
+>>> Faker.seed(1555)
 >>>
 >>> # `fake.none_or` can take any value, and return it, or None.
 >>> fake.none_or(fake.pystr())
-'qazSMGwqdElzLTggMaPM'
+'scHhghRDleajCHjEYWAu'
 >>> fake.none_or(fake.pystr())
 None
 >>> # or it can take callable, and *args with **kwargs
 >>> # that will be passed to this callable.
 >>> fake.none_or(fake.pystr, 1, max_chars=10)
-'hmIEP'
+'zmZUcJVTYX'
 >>> fake.none_or(fake.pystr, 1, max_chars=10)
 None
 >>> # there is no explicit check is callable a faker part,
