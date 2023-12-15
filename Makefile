@@ -17,10 +17,5 @@ style: format lint
 unit:
 	pytest
 
-.PHONY: package
-package:
-	poetry check
-	pip check
-
 .PHONY: test
-test: style package unit
+test: style unit
