@@ -15,7 +15,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        python-version: ['3.9', '3.10', '3.11', '3.12']
+        python-version: ['3.9', '3.10', '3.11', '3.12', '3.13']
 
     steps:
     - uses: actions/checkout@v5
@@ -41,12 +41,12 @@ jobs:
       id: poetry_setup
       uses: ItsDrike/setup-poetry@v1
       with:
-          python-version: 3.12
+          python-version: 3.13
           install-args: --only main --only make --only github_hooks --only typing --sync
 
     - name: Install dependencies
       run: |
-        poetry env use "3.12"
+        poetry env use "3.13"
         poetry install --only main,make,github_hooks
 
     - name: Apply codestyle
