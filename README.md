@@ -6,6 +6,10 @@
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 [![Python support versions badge (from pypi)](https://img.shields.io/pypi/pyversions/optional-faker)](https://www.python.org/downloads/)
 
+> [!NOTE]
+> This project is not unmaintaned, it is fully complete. I will gladly accept
+> any bug reports, though
+
 Small wrapper around faker, to make values optional!
 
 Note that faker added own `optional` proxy, which however can be used only with callables. This is why in version 2.0.0 we renamed our method to `none_or`.
